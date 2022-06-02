@@ -15,5 +15,5 @@ let point = {
 alert(point.a + point.b + point.c);
 
 let data = 5 > 10;
-let number = data === true ? '3' : '5';
+let number = data ? 3 : 5;
 alert(number);
