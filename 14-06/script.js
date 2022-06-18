@@ -1,8 +1,8 @@
 /*1) Заполните массив 10-ю иксами с помощью цикла.    [x,x...]*/
 
 let arr = [];
-for (let i = 0; i <=9  ; i++) {
-    arr[i] = 'x';
+for (let i = 1; i <=10  ; i++) {
+    arr.push ('x');
 }
 console.log(arr);
 
