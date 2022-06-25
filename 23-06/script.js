@@ -7,7 +7,7 @@ const users = [
     {name: 'Jenya', isProgrammer: false}
 ];
 
-const filtered = users.filter(item => item.isProgrammer === true)
+const filtered = users.filter(item => item.isProgrammer);
 
 console.log(filtered);
 
@@ -17,7 +17,7 @@ console.log(filtered);
 
 const arr = [-5, 10, 5, 55, -1, 22, -4, 36, -45];
 
-const filteredNumbers = arr.filter(item2 => item2 < 0)
+const filteredNumbers = arr.filter(item2 => item2 < 0);
 
 console.log(filteredNumbers);
 
@@ -27,6 +27,6 @@ console.log(filteredNumbers);
 
 const arr2 = [2, 4, 6, 3, 8, 5];
 
-const square = arr2.map(element => element **2)
+const square = arr2.map(element => element**2);
 
 console.log(square);
