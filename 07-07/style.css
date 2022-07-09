@@ -1,0 +1,35 @@
+.container{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn{
+    padding: 15px;
+    background-color: darkred;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #38454c;
+    box-shadow: 6px 9px 59px 23px rgba(34, 60, 80, 0.2);
+}
+
+.notification{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 16px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+    color: #084298;
+}
