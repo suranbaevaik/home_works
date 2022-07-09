@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container img{
+    width: 350px;
+}
