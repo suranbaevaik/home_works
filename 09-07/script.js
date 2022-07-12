@@ -13,4 +13,27 @@ function askName() {
     }
 }
 
+/*2) Реализовать таймер. С функционалом старт, стоп.
+    При нажатии на кнопку старт, таймер начинается (старт с 0).
+При нажатии на стоп, таймер остановливается.*/
 
+let startBtn = document.querySelector('#start');
+let stopBtn = document.querySelector('#stop');
+let showTime = document.querySelector('#showTime');
+
+startBtn.addEventListener('click', startTimer);
+stopBtn.addEventListener('click', stopTimer);
+
+let time = 0;
+let counter;
+
+function startTimer() {
+    counter = setInterval(function() {
+        time++;
+        showTime.innerText = time;
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(counter);
+}
