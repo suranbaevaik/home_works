@@ -4,8 +4,6 @@ const btn2 = document.querySelector('#btn2');
 
 function showNotification(options) {
     let information = document.createElement('div');
-    console.log(information);
-    information.className = 'notification';
     information.innerText = options.html;
     information.className = options.className += ' notification';
     document.body.append(information);

@@ -4,13 +4,19 @@
     а затем приветствует его по имени,
     и меняет изображение на улыбающийся смайлик (свойство src тега img)*/
 
+const smile = document.querySelector('#sad_smile');
+
 function askName() {
     let user = prompt('Как вас зовут?');
     if (user){
-        alert('Добро пожаловать, ' + user);
-        document.querySelector('#sad_smile').src = './img/happy.png';
+        alert(`Добро пожаловать, ${user}`);
+        smile.src = './img/happy.png';
     }
 }
+
+smile.addEventListener('click', askName);
+
+
 
 /*2) Реализовать таймер. С функционалом старт, стоп.
     При нажатии на кнопку старт, таймер начинается (старт с 0).
