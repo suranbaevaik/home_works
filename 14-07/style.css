@@ -1,0 +1,29 @@
+body{
+    background-color: #c4b7aa;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card_box{
+    width: 250px;
+    background-color: #e2e6d6;
+    padding: 15px;
+    color: #44463d;
+    box-shadow: 0 0 5px 5px rgba(68, 70, 61, 0.2);
+    text-align: center;
+}
+
+.name{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 15px;
+}
+
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
