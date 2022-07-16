@@ -1,4 +1,4 @@
-const arrCards = [
+const arrUsers = [
     {
         id: 1,
         name: "Leanne Graham",
@@ -178,4 +178,4 @@ const showUserCards = (elements) => {
     })
 }
 
-showUserCards(arrCards);
+showUserCards(arrUsers);
