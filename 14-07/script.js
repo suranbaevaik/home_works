@@ -146,6 +146,9 @@ const showUserCards = (elements) => {
         const cardBox = document.createElement('div');
         cardBox.className = 'card_box';
 
+        const cardImg = document.createElement('img');
+        cardImg.src = './img/user.png';
+
         const cardName = document.createElement('h2');
         cardName.className = 'name';
         cardName.innerHTML = item.name;
@@ -170,7 +173,7 @@ const showUserCards = (elements) => {
         cardCompany.className = 'text';
         cardCompany.innerHTML = '<b>Company: </b>' + item.company.name;
 
-        cardBox.append(cardName, cardUserName, cardEmail, cardAddress, cardPhone, cardCompany);
+        cardBox.append(cardImg, cardName, cardUserName, cardEmail, cardAddress, cardPhone, cardCompany);
         document.querySelector('#main_box').append(cardBox);
     })
 }
