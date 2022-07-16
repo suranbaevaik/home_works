@@ -1,10 +1,28 @@
-.cards{
+.container{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 
-.cards img{
-    width: 200px;
+.card{
+    width: 350px;
+    background-color: #F5F5F7;
+    padding: 10px;
+    text-align: center;
 }
 
+.card_name{
+
+}
+
+.card img{
+    width: 100%;
+}
+
+.card button{
+    padding: 7px 10px;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+}

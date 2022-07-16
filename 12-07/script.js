@@ -1,4 +1,4 @@
-let product_cards = [
+const products = [
     {
         id : 1,
         name : "Iphone 13 pro max",
@@ -13,13 +13,28 @@ let product_cards = [
     }
 ];
 
-let products ='';
+const showProducts = (elements) => {
+    elements.forEach( (item) => {
+        const cardBox = document.createElement('div');
+        cardBox.className = 'card';
 
-product_cards.forEach(element => {
-    products += `<img src="${element.img_url}"> <br>`;
-    products += `Код товара: ${element.id} <br>`;
-    products += `Название: ${element.name} <br>`;
-    products += `Цена: ${element.price}`;
-});
+        const elementName = document.createElement('h2');
+        elementName.className = 'card_name';
+        elementName.innerText = item.name;
 
-document.querySelector('#products').innerHTML = products;
+        const elementImage = document.createElement('img');
+        elementImage.src = item.img_url;
+
+        const elementPrice = document.createElement('p');
+        elementPrice.innerText = `${item.price} сом`;
+
+        const elementButton = document.createElement('button');
+        elementButton.innerText = 'КУПИТЬ';
+
+        cardBox.append(elementName, elementImage, elementPrice, elementButton);
+
+        document.querySelector('#root').append(cardBox);
+    })
+}
+
+showProducts(products);
