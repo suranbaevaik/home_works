@@ -28,6 +28,5 @@ form.addEventListener('submit', () => {
     let obj = Object.keys(localStorage);
     for(let key of obj) {
         console.log(`${key}: ${localStorage.getItem(key)}`);
-
     }
 })

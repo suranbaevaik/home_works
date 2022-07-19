@@ -26,5 +26,5 @@ form.addEventListener('submit', () => {
     localStorage.setItem('userEmail', userEmail.value);
     localStorage.setItem('userBank', userBank.value);
     localStorage.setItem('userAddress', userAddress.value);
-    window.open('./Form-2.html');
+    window.open('./form_2.html');
 })
