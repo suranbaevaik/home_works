@@ -20,7 +20,7 @@ body{
     background-color: #FFFFFF;
 }
 
-.topic{
+.heading{
     font-family: 'Sora', sans-serif;
     font-weight: 600;
     line-height: 20px;
@@ -28,7 +28,7 @@ body{
     margin-top: 50px;
 }
 
-.data{
+.data_box{
     margin-left: 24px;
     margin-right: 24px;
     display: flex;
@@ -45,7 +45,7 @@ body{
     flex-wrap: wrap;
 }
 
-.topic-2{
+.heading-2{
     font-family: 'Sora', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -88,11 +88,10 @@ input::placeholder{
 }
 
 select{
-    color: #DADADA;
     padding-left: 10px;
 }
 
-.submit{
+.submit_box{
     margin-top: 30px;
     align-self: center;
 }
