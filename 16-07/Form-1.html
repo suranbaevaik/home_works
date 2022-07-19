@@ -11,67 +11,72 @@
 </head>
 <body>
 <div class="container">
-    <form class="auth">
+    <form id="form_1" class="auth" action="javascript:void(0)">
         <div>
-            <p class="topic">Анкета  для корпоративных клиентов</p>
+            <p class="heading">Анкета  для корпоративных клиентов</p>
         </div>
-        <div class="data">
-            <div><p class="label">Личные данные</p></div>
-            <div class="personal">
+
+        <div class="data_box">
+            <div><p class="block_name">Личные данные</p></div>
+            <div class="personal_data">
                 <div>
-                    <input class="box-1" type="text" placeholder="Фамилия">
+                    <input id="lastName" class="box-1" type="text" placeholder="Фамилия">
                 </div>
                 <div>
-                    <input class="box-1" type="text" placeholder="Имя">
+                    <input id="name" class="box-1" type="text" placeholder="Имя">
                 </div>
                 <div>
-                    <input class="box-1" type="text" placeholder="Отчество">
-                </div>
-            </div>
-            <div><p class="label">Паспортные данные</p></div>
-            <div class="passport">
-                <div>
-                    <input class="box-1" type="date" placeholder="Дата рождения">
-                </div>
-                <div>
-                    <input class="box-2" type="text" placeholder="Место проживания по прописке">
-                </div>
-                <div>
-                    <input class="box-1" type="text" placeholder="Серийный номер AN/ID">
-                </div>
-                <div>
-                    <input class="box-1" type="text" placeholder="ИНН">
-                </div>
-                <div>
-                    <input class="box-1" type="date" placeholder="Дата получения" >
-                </div>
-                <div>
-                    <input class="box-1" type="text" placeholder="Контактный номер">
-                </div>
-                <div>
-                    <input class="box-1" type="email" placeholder="Электронный адрес">
-                </div>
-                <div>
-                    <select>
-                        <option>Наименование банка</option>
-                        <option>Bank1</option>
-                        <option>Bank2</option>
-                        <option>Bank3</option>
-                        <option>Bank4</option>
-                    </select>
-                </div>
-                <div>
-                    <input class="box-2" type="text" placeholder="Фактическое место проживания">
+                    <input id="middleName" class="box-1" type="text" placeholder="Отчество">
                 </div>
             </div>
 
+            <div><p class="block_name">Паспортные данные</p></div>
+            <div class="passport_data">
+                <div>
+                    <input id="birthDate" class="box-1" type="date" placeholder="Дата рождения">
+                </div>
+                <div>
+                    <input id="passportAddress" class="box-2" type="text" placeholder="Место проживания по прописке">
+                </div>
+                <div>
+                    <input id="passportNumber" class="box-1" type="text" placeholder="Серийный номер AN/ID">
+                </div>
+                <div>
+                    <input id="personalNumber" class="box-1" type="text" placeholder="ИНН">
+                </div>
+                <div>
+                    <input id="receivingDate" class="box-1" type="date" placeholder="Дата получения" >
+                </div>
+                <div>
+                    <input id="phone" class="box-1" type="text" placeholder="Контактный номер">
+                </div>
+                <div>
+                    <input id="email" class="box-1" type="email" placeholder="Электронный адрес">
+                </div>
+                <div>
+                    <select id="bank">
+                        <option value="0">Наименование банка</option>
+                        <option value="bank1">Bank1</option>
+                        <option value="bank2">Bank2</option>
+                        <option value="bank3">Bank3</option>
+                        <option value="bank4">Bank4</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="address" class="box-2" type="text" placeholder="Фактическое место проживания">
+                </div>
+            </div>
         </div>
+
         <div class="submit">
             <a href="#">
-                <button class="btn">Далее</button>
+                <button type="submit" class="btn">Далее</button>
             </a>
         </div>
     </form>
 </div>
+
+
+<script src="script-1.js"></script>
 </body>
 </html>
