@@ -25,4 +25,9 @@ form.addEventListener('submit', () => {
     localStorage.setItem('creditTerm', creditTerm.value);
     localStorage.setItem('receivingPoint', receivingPoint.value);
 
+    let obj = Object.keys(localStorage);
+    for(let key of obj) {
+        console.log(`${key}: ${localStorage.getItem(key)}`);
+
+    }
 })
